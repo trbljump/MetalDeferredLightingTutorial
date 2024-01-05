@@ -17,6 +17,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         let metalView = self.view as! MTKView
+        metalView.framebufferOnly = false
         
         // We initialize our renderer object with the MTKView it will be drawing into
         renderer = Renderer(mtkView:metalView)

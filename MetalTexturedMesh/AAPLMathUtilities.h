@@ -126,4 +126,4 @@ quaternion_float quaternion_multiply(quaternion_float q0, quaternion_float q1);
 quaternion_float quaternion_slerp(quaternion_float q0, quaternion_float q1, float t);
 
 /// Returns the vector that results from rotating the provided vector by the provided unit-norm quaternion
-vector_float3 quaternion_rotate_vector(quaternion_float q, vector_float3 v);
+vector_float3 AAPL_SIMD_OVERLOAD quaternion_rotate_vector(quaternion_float q, vector_float3 v);

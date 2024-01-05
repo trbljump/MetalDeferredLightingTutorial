@@ -135,7 +135,7 @@ fragment GBufferOut gBufferFrag(VertexOut in [[stage_in]],
     return output;
 }
 
-vertex VertexOut vertex_transform(device VertexIn *vertices [[buffer(0)]],
+vertex VertexOut vertex_transform(constant VertexIn *vertices [[buffer(0)]],
                                   constant Constants &uniforms [[buffer(1)]],
                                   uint vertexId [[vertex_id]])
 {
